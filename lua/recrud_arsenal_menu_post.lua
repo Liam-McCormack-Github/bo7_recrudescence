@@ -184,28 +184,7 @@ local function OurArsenalMenu( f1_arg1 )
 		do end
 		if type(pit)=="table" then local n=0; for k2,v2 in pairs(pit) do if n<8 then n=n+1; do end end end end
 	end
-	do end; uIElement:SetPrompts( {
-		{
-			buttonRef = "button_secondary",
-			labeltext = "lua_menu/exit",
-			inputtype = 2, -- LUI.promptinputtype.gamepad_only
-			gamepadicontype = 1 -- LUI.prompticontype.button_ref_icon
-		},
-		{
-			buttonRef = "button_primary",
-			labeltext = "LUA_MENU/PURCHASE",
-			priority = 2,
-			inputtype = 2, -- LUI.promptinputtype.gamepad_only
-			gamepadicontype = 1 -- LUI.prompticontype.button_ref_icon
-		},
-		{
-			buttonRef = "button_dpad_horizontal",
-			labeltext = "lua_menu/select",
-			priority = 3,
-			inputtype = 2, -- LUI.promptinputtype.gamepad_only
-			gamepadicontype = 1 -- LUI.prompticontype.button_ref_icon
-		}
-	} )
+	uIElement:SetPrompts({})
 	do end; local MouseButtonArea = nil
 	
 	MouseButtonArea = menuBuilder.BuildRegisteredType( "MouseButtonArea", {
@@ -485,7 +464,7 @@ local function OurArsenalMenu( f1_arg1 )
 		closeNotify = DSP("current_menu_close_notify")
 	}
 	aCTIONS.ScaleFullscreen( uIElement )
-	do end; aCTIONS.SetPromptsContainer( uIElement, uIElement.promptcontainer, f1_local4 )
+	-- Stock footer prompts omitted: their widgets render placeholder arrows.
 	do end; pcall(function() STREAMING.addstreamerhint( f1_local4, uIElement, "upgradesequenceitem" ) end)
 	do end; pcall(function() aCTIONS.AnimateSequence( uIElement, "DefaultSequence" ) end)
 	if CONDITIONS.IsChinese() then
@@ -599,7 +578,7 @@ function RecrudBuildAugTab(ci)
         local nm=F(item,"shortdisplayname") or F(item,"displayname")
         local okl,l=pcall(Engine.Localize,nm)
         local key=(okl and type(l)=="string" and l~="" and l) or tostring(nm)
-        key=key:gsub("h88","")
+        key=key:gsub("Â–h88","")
         local img=F(item,"image"); local iref=F(item,"itemref")
         if img then stockImg[key:lower()]=img; if iref then stockImg[tostring(iref):lower()]=img end end
         local cd=F(item,"currencydata")

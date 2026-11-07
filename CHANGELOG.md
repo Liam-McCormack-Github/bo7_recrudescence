@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+Removed the broken Arsenal footer prompts while retaining the existing menu navigation and mouse input. Corrected the mod description: weapon rarity upgrades use Aether Tools from Easter egg rewards, not Arsenal purchases.
+
 ## 1.0.1
 
 Packaging-only correction: removed seven redundant stock BO7 image exports. The mod references the built-in game materials directly. No gameplay changes.

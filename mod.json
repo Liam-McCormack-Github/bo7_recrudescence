@@ -1,7 +1,7 @@
 {
     "name": "bo7_recrudescence",
     "author": "Liam McCormack",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "ui",
-    "description": "BO7 Zombies overhaul with an expanded Arsenal, in-game attachments, augments and camos, a no-repeat Mystery Box and rebalanced progression."
+    "description": "BO7 Zombies overhaul with Arsenal attachments, augments and 2,412 camos, a 72-weapon no-repeat Mystery Box, and rebalanced progression. Weapon rarity upgrades use Aether Tools from Easter egg rewards."
 }
