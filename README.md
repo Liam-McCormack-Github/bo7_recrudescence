@@ -55,7 +55,7 @@ Disable older `recrud`/`dev_recrud` copies before enabling this release. Other g
 - `mod.json`: Workshop/Mods metadata.
 - `scripts/`: production GSC source; Kronos compiles it when loading.
 - `lua/`: production post-load menu/HUD scripts.
-- `images/`: the seven image overrides required by the camo menu.
+All icons and materials are provided by BO7; no stock image exports are bundled.
 
 No compiled GSC files, developer build, logs, local player data or external mod-menu files are included.
 
