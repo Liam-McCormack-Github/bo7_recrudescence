@@ -28,7 +28,7 @@ A Zombies overhaul for **Call of Duty: Black Ops 7 on Kronos**, created by [Liam
 ### Progression and balance
 
 - **Pack-a-Punch IV** for 50,000 essence.
-- **Tier V / Ultra weapon rarity** at the Arsenal.
+- Weapon rarity upgrades are no longer purchased at the Arsenal. Use **Aether Tools from Easter egg rewards** to upgrade rarity.
 - **Tier IV Golden Armor** for 30,000 essence; players start without armor.
 - Normal and armored zombie health caps at **25,000**; special enemies retain their native handling.
 - Normal/armored zombie swipes deal **50 base damage**, before armor/perk reductions.
