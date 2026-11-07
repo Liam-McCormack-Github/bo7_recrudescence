@@ -1,0 +1,4 @@
+compiled/
+*.gscc
+__pycache__/
+*.log
